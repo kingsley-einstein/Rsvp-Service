@@ -11,6 +11,14 @@ export default (app: any) => {
     app.use(Cors("*"));
     app.use(logger("dev"));
     app.use(actuator());
+
+    // Healthcheck route for Kintohub's consumption
+    app.get("/", (req: any, res: any) => {
+      res.status(200).json({
+        status: "UP"
+      });
+    });
+
     app.use("/api/v1", router);
   }
 }
