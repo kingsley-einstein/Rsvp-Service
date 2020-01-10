@@ -33,7 +33,8 @@
     "pg": "^7.17.0",
     "pg-hstore": "^2.3.3",
     "request-promise": "^4.2.5",
-    "sequelize": "^5.21.3"
+    "sequelize": "^5.21.3",
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
