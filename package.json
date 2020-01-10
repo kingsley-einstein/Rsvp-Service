@@ -12,7 +12,7 @@
     "clean:build:unix": "npm run clean:unix && npm run build",
     "start:local": "set NODE_ENV=development&& npm run clean:build:local && nodemon ./build/index",
     "start:unix": "export NODE_ENV=production && npm run clean:build:unix && node ./build/index",
-    "start:kinto": "export NODE_ENV=production && npm run clean:build:unix && node ./build/index"
+    "start:kinto": "export NODE_ENV=production && export PORT=80 && node ./build/index"
   },
   "keywords": [],
   "author": "",
