@@ -22,6 +22,7 @@ const loadCloudConfigAndEureka = async () => {
       ipAddr: c.get("eureka.instance.hostname"),
       statusPageUrl: c.get("eureka.instance.statusPage"),
       healthCheckUrl: c.get("eureka.instance.healthCheck"),
+      homePageUrl: `http://${c.get("eureka.instance.hostname")}:${port}/`,
       vipAddress: c.get("eureka.instance.vipAddress"),
       port: {
         "$": parseInt(port),
