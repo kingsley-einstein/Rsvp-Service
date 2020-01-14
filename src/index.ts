@@ -33,6 +33,7 @@ const loadCloudConfigAndEureka = async () => {
       }
     },
     eureka: {
+      preferIpAddress: true,
       serviceUrls: {
         default: [
           `${c.get("eureka.client.url")}/eureka/apps`
